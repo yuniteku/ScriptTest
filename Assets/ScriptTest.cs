@@ -60,9 +60,7 @@ public class  Boss
                 }
 
                else
-                {
-
-                 
+                {               
                     Debug.Log("MPが足りないため魔法が使えない。");
                 }
 
