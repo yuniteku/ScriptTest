@@ -11,7 +11,7 @@ public class ScriptTest : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
 
         //課題2
         Debug.Log(array[0]);
@@ -23,7 +23,11 @@ public class ScriptTest : MonoBehaviour
         Test();
 
         //発展課題
-        boss.Magic(5);
+        for (int i = 0; i <= 10; i++)
+        {
+        
+            boss.Magic(5);
+          }
  
 
     }
@@ -46,10 +50,7 @@ public class  Boss
 
 
        public void Magic(int mAttack)
-        {
-
-          for(int i = 0; i < 10; i++)
-            { 
+        { 
 
                 if (mp >= 5)
                 {
@@ -57,16 +58,17 @@ public class  Boss
                     this.mp -= mAttack;
                     Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
                 }
-                if (mp <= 4)
+
+               else
                 {
 
-                    this.mp = mAttack;
+                 
                     Debug.Log("MPが足りないため魔法が使えない。");
                 }
 
             }
 
-        }
+        
 
 }
 
