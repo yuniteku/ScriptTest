@@ -47,10 +47,11 @@ public class  Boss
 
        public void Magic(int mAttack)
         {
-           while(mp > 5)
+
+          for(int i = 0; i < 10; i++)
             { 
 
-                if (mp >= 4)
+                if (mp >= 5)
                 {
 
                     this.mp -= mAttack;
